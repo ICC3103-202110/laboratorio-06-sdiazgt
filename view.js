@@ -42,7 +42,7 @@ function inputForm(model){
                 if(value === 'y' || value === 'n'){
                     return true
                 } else {
-                    return 'Enter y or n'
+                    return 'Enter lower case y or n'
                 }
             }
         },
@@ -75,21 +75,6 @@ function inputForm(model){
         }
     ])
 }
-
-/*
-function listForm(model){
-    //const {input} = model
-    const message = 'Increase or decrease?'
-    const choices = ['Celsius', 'Fahrenheit','Kelvin']
-    return inquirer.prompt({
-        name: 'input',
-        type: 'list',
-        message: message,
-        default: input,
-        choices: choices
-    })
-}
-*/
 
 function view(model){
     return {
